@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja de Sushi - Sushi Delícia</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f4f4f4; color: #333; }
+        header { background-color: #333; color: white; text-align: center; padding: 20px; }
+        nav { background-color: #444; padding: 10px; text-align: center; }
+        nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: bold; }
+        nav a:hover { color: #ffcc00; }
+        section { padding: 20px; max-width: 1200px; margin: auto; }
+        .menu-item { border: 1px solid #ddd; padding: 15px; margin: 10px 0; background-color: white; display: flex; align-items: center; }
+        .menu-item img { width: 150px; height: 100px; object-fit: cover; margin-right: 15px; }
+        .menu-item h3 { margin: 0; }
+        .menu-item p { margin: 5px 0; }
+        .promo { background-color: #ffcc00; padding: 15px; text-align: center; margin: 20px 0; }
+        form { max-width: 600px; margin: auto; }
+        form label { display: block; margin: 10px 0 5px; }
+        form input, form textarea { width: 100%; padding: 10px; margin-bottom: 10px; }
+        form button { background-color: #333; color: white; padding: 10px; border: none; cursor: pointer; }
+        form button:hover { background-color: #555; }
+        footer { background-color: #333; color: white; text-align: center; padding: 10px; }
+        .gallery { display: flex; flex-wrap: wrap; justify-content: center; }
+        .gallery img { width: 300px; height: 200px; object-fit: cover; margin: 10px; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Sushi Delícia</h1>
+        <p>A melhor experiência em sushi da cidade!</p>
+        <img src="https://images.unsplash.com/photo-1579584425555-c3ce17fd4351?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Interior de restaurante de sushi" style="width:100%; max-width:800px; margin-top:10px;">
+    </header>
+    
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#cardapio">Cardápio</a>
+        <a href="#galeria">Galeria</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#contato">Contato</a>
+    </nav>
+    
+    <section id="home">
+        <h2>Bem-vindo à Sushi Delícia</h2>
+        <p>Oferecemos uma variedade de sushis frescos, preparados com ingredientes de alta qualidade. Venha nos visitar e desfrute de uma experiência autêntica da culinária japonesa!</p>
+        <div class="promo">
+            <h3>Promoção Especial!</h3>
+            <p>Combo Família: 20 peças de sushi por apenas R$ 50,00. Válido até o fim do mês!</p>
+        </div>
+    </section>
+    
+    <section id="cardapio">
+        <h2>Cardápio</h2>
+        <div class="menu-item">
+            <img src="https://images.unsplash.com/photo-1553621042-f6e147245754?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Nigiri de Salmão">
+            <div>
+                <h3>Nigiri de Salmão</h3>
+                <p>Arroz temperado com fatia de salmão fresco.</p>
+                <p><strong>Preço:</strong> R$ 15,00</p>
+            </div>
+        </div>
+        <div class="menu-item">
+            <img src="https://images.unsplash.com/photo-1579584425555-c3ce17fd4351?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Sashimi de Atum">
+            <div>
+                <h3>Sashimi de Atum</h3>
+                <p>Fatias finas de atum cru, servido com molho especial.</p>
+                <p><strong>Preço:</strong> R$ 20,00</p>
+            </div>
+        </div>
+        <div class="menu-item">
+            <img src="https://images.unsplash.com/photo-1553621042-f6e147245754?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Combo Califórnia Roll">
+            <div>
+                <h3>Combo Califórnia Roll</h3>
+                <p>Rolinho com abacate, pepino e kani, envolto em nori.</p>
+                <p><strong>Preço:</strong> R$ 25,00</p>
+            </div>
+        </div>
+        <div class="menu-item">
+            <img src="https://images.unsplash.com/photo-1579584425555-c3ce17fd4351?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Temaki de Salmão">
+            <div>
+                <h3>Temaki de Salmão</h3>
+                <p>Cone de nori recheado com salmão, arroz e vegetais.</p>
+                <p><strong>Preço:</strong> R$ 18,00</p>
+            </div>
+        </div>
+        <div class="menu-item">
+            <img src="https://images.unsplash.com/photo-1553621042-f6e147245754?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Bebidas - Chá Verde">
+            <div>
+                <h3>Bebidas - Chá Verde</h3>
+                <p>Chá tradicional japonês, refrescante.</p>
+                <p><strong>Preço:</strong> R$ 5,00</p>
+            </div>
+        </div>
+    </section>
+    
+    <section id="galeria">
+        <h2>Galeria de Pratos</h2>
+        <div class="gallery">
+            <img src="https://images.unsplash.com/photo-1553621042-f6e147245754?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Sushi variado">
+            <img src="https://images.unsplash.com/photo-1579584425555-c3ce17fd4351?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Rolinhos de sushi">
+            <img src="https://images.unsplash.com/photo-1553621042-f6e147245754?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Sashimi fresco">
+        </div>
+    </section>
+    
+    <section id="sobre">
+        <h2>Sobre Nós</h2>
+        <p>Sushi Delícia é uma loja especializada em culinária japonesa, com foco em sushis frescos e autênticos. Atendemos com entrega rápida, retirada no local e ambiente acolhedor para refeições. Nossos chefs são experientes e utilizam apenas ingredientes premium.</p>
+    </section>
+    
+    <section id="contato">
+        <h2>Contato</h2>
+        <p><strong>Endereço:</strong> Rua dos Sushis, 123, Centro, Cidade</p>
+        <p><strong>Telefone:</strong> (11) 9999-9999</p>
+        <p><strong>Email:</strong> contato@sushidelicia.com</p>
+        <p><strong>Horário:</strong> Seg-Sex: 11h-22h | Sáb-Dom: 12h-23h</p>
+        <h3>Envie-nos uma mensagem</h3>
+        <form action="#" method="post">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+            
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+    
+    <footer>
+        <p>&copy; 2023 Sushi Delícia. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
